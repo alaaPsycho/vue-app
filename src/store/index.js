@@ -1,8 +1,14 @@
 import { createStore } from "vuex";
 
 export default createStore({
-  state: {},
-  mutations: {},
+  state: {
+    jobs :[]
+  },
+  mutations: {
+    setJobs(state,jobs){
+      state.jobs = jobs
+    }
+  },
   actions: {},
   modules: {},
 });
